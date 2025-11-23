@@ -1,0 +1,2161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- --------bootstrap------ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- --------owl carousel------ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- --------AOS LIB------ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- --------Font Awesome.LIB------ -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- --------main style------ -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- -----------------------------  header&nav-------------------------- -->
+    <header>
+        <div class="langAndCurrency py-3 d-none d-lg-block ">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="leftWelcome">
+                    <h4 class="text-white fs-5 fw-normal">Welcome to Worldwide Electronics Store</h4>
+                </div>
+                <div class="dropDown d-flex align-items-center justify-content-between">
+                    <div class="lang">
+                        <button> <img src="imgs/imgi_1_flag_en.png" alt="">English <i
+                                class="fa-solid fa-caret-up "></i></button>
+                        <ul>
+                            <li>
+                                <div class="img">
+                                    <img src="imgs/imgi_1_flag_en.png" alt="">
+
+                                </div>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="imgs/imgi_2_flag_es.png" alt="">
+
+                                </div>
+                                <a href="#">Español</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="imgs/imgi_3_flag_zh-CN.png" alt="">
+
+                                </div>
+                                <a href="#">简体中文</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="imgs/imgi_4_flag_it.png" alt="">
+
+                                </div>
+                                <a href="#">Italiano</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="lang currency">
+                        <button>United States(PKR ₨) <i class="fa-solid fa-caret-up "></i></button>
+                        <ul>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Austria (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Belgium (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Germany (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Italy (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Netherlands (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Norway (PKR Rs) </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Pakistan (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Poland (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Portugal (PKR Rs)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4 border-bottom">
+            <div class="header-content">
+                <div class="row align-items-center justify-content-end">
+                    <div class="col-3 d-xl-none">
+                        <div class="offcanv">
+                            <i class="fa-solid fa-bars" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+                        </div>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container">
+                                    <div class="search-input ">
+                                        <input type="text" placeholder="Search....">
+                                        <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                    <ul>
+                                        <li class="border-bottom"><a href=""> <i class="fa-regular fa-user"></i> Login /
+                                                Register</a></li>
+                                        <li class="border-bottom"><a href="">Shop <span>New</span></a></li>
+                                        <li class="border-bottom"><a href="">Home</a></li>
+                                        <li class="border-bottom"><a href="">Page</a></li>
+                                        <li class="border-bottom"><a href="">Blog</a></li>
+                                        <li class="border-bottom"><a href="">Wishlist <span>(1)</span></a></li>
+                                        <li class="border-bottom"><a href="">Compare <span>(0)</span></a></li>
+                                        <li class="border-bottom"><a href="">Contact Us</a></li>
+
+                                    </ul>
+                                    <div class="language border-bottom ">
+                                        <div class="row">
+                                            <div class="small-lang d-flex align-items-center justify-content-between">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        English
+                                                    </a>
+
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        English
+                                                    </a>
+
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="small-coin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="logo">
+                            <a href="">
+                                <img src="imgs/imgi_5_logo_140x@2x.png" alt="">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-5 d-none d-xl-flex">
+                        <div class="search-input">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    All categories
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Search....">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-4">
+                        <div class="controls">
+                            <a href="#" class="d-none d-xl-flex">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="i-controler">
+                                    <span>Login</span>
+                                    <span>
+                                        Acount
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="pages/wish/index.html" class="d-none d-xl-flex">
+                                <div class="icon-notify">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div class="notify">2</div>
+                                </div>
+                            </a>
+                            <a href="pages/cart/index.html">
+                                <div class="icon-notify">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div class="notify">2</div>
+                                </div>
+                                <div class="i-controler d-none d-md-block">
+                                    <span>Your Cart</span>
+                                    <span>
+                                        $9.000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <div class="nav-foot d-flex d-xl-none">
+        <div class="container">
+            <div class="nav-content">
+
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-regular fa-house"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-solid fa-shop"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <div class="icon-notify">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="notify">2</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <div class="icon-notify">
+                            <i class="fa-solid fa-heart"></i>
+                            <div class="notify">2</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lastNav d-none d-xl-flex">
+        <div class="container">
+            <div class="row justify-content-between py-4">
+                <div class="browseAllCategories col-3">
+                    <button id="Categories"><i class="fa-solid fa-bars"></i>Browse All Categories</button>
+                    <div class="categorieContainer ">
+                        <ul>
+                            <li><a href="">Computer & Desktop</a> <i class="fa-solid fa-chevron-down"></i>
+
+                                <div class="subCategorie pt-4">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-4 ">
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="itemsImg col-8 row ">
+                                            <div class="item col-6">
+                                                <img src="imgs/imgi_93_pro03.png" alt="" class="w-100">
+                                            </div>
+                                            <div class="item col-6">
+                                                <img src="imgs/imgi_30_pro09.png" alt="" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li><a href="">Laptop & Ipad</a></li>
+                            <li><a href="">Cameras & Photos</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-12 ">
+                                            <ul class="w-100">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Smart Phones & Tablets</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie pt-4">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-5 ">
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="itemsImg col-7 row ">
+                                            <div class="item ">
+                                                <img src="imgs/imgi_93_pro03.png" alt="" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Home & Kitchen</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-12 ">
+                                            <ul class="w-100">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">TV & Audios</a></li>
+                            <li><a href="">Health & Beauty</a></li>
+                            <li><a href="">Watches & Eyewear</a></li>
+                            <li><a href="">Top Deals</a></li>
+                            <li><a href="">Top Selling Products</a></li>
+                            <li><a href="">Top Featured Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="col-4 ">
+                    <ul class="d-flex align-items-center justify-content-between position-relative">
+                        <li><a href="">Home</a>
+
+                        </li>
+                        <li><a href="">Product<i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="nav-drop ">
+                                <div class="row">
+
+                                    <div class="nav-drop-list col-6">
+                                        <div class="row">
+
+                                            <ul class="col-6">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                            <ul class="col-6">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-drop-img col-6">
+                                        <div class="row">
+
+                                            <div class="nav-img col-6">
+                                                <div class="inner">
+
+                                                    <img src="imgs/imgi_36_pro10.png" alt="" class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="nav-img col-6 ">
+                                                <div class="inner ">
+
+                                                    <img src="imgs/imgi_84_pro05.png" alt="" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="nav-drop ">
+                                <div class="row">
+
+                                    <div class="nav-drop-list ">
+                                        <div class="row">
+
+                                            <ul class="">
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">Pages<i class="fa-solid fa-chevron-down"></i> </a></li>
+                        <li><a href="">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="navSale col-3 d-flex justify-content-end">
+                    <a href="#"><i class="fa-solid fa-percent"></i>Sale $20 Off Your First Order.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------End Header & Nav-------------------------- -->
+
+    <main>
+        <!-- Landing Section -->
+        <section id="Landing" class="py-4">
+            <div class="container">
+                <div class="landing">
+                    <div class="row g-4">
+
+                        <!-- Left side: Main Carousel (8 columns) -->
+                        <div class="col-xl-8">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-fade"
+                                data-bs-ride="carousel">
+
+                                <!-- Carousel Slides -->
+                                <div class="carousel-inner ">
+
+                                    <!-- First Slide -->
+                                    <div class="carousel-item active">
+                                        <div class="land-card land-img-con">
+                                            <!-- Desktop Image -->
+                                            <img src="imgs/imgi_12_hero-Banner-1.2.png" class="d-block w-100" alt="...">
+                                            <!-- Mobile Image -->
+                                            <img src="imgs/imgi_13_hero-Banner-m-2.png" class="d-block w-100" alt="">
+                                            <!-- Slide Content -->
+                                            <div class="land-card-info">
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <h1 data-aos="fade-down" data-aos-duration="2000"><span>4K</span> LCD
+                                                    <br> Radiant View LCD
+                                                </h1>
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <a href="#" data-aos="fade-up" data-aos-duration="2000">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second Slide -->
+                                    <div class="carousel-item">
+                                        <div class="land-card land-img-con">
+                                            <img src="imgs/imgi_14_hero-Banner-1.3.png" class="d-block w-100" alt="...">
+                                            <img src="imgs/imgi_15_hero-Banner-m-3.png" class="d-block w-100" alt="">
+                                            <div class="land-card-info">
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <h1 data-aos="fade-down" data-aos-duration="2000"><span>4K</span> LCD
+                                                    <br> Radiant View LCD
+                                                </h1>
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <a href="#" data-aos="fade-up" data-aos-duration="2000">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Third Slide -->
+                                    <div class="carousel-item">
+                                        <div class="land-card land-img-con">
+                                            <img src="imgs/imgi_10_hero-Banner.png" class="d-block w-100" alt="...">
+                                            <img src="imgs/imgi_11_hero-Banner-mb.png" class="d-block w-100" alt="">
+                                            <div class="land-card-info">
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <h1 data-aos="fade-down" data-aos-duration="2000"><span>4K</span> LCD
+                                                    <br> Radiant View LCD
+                                                </h1>
+                                                <span data-aos="fade-down" data-aos-duration="2000">New Arrivals</span>
+                                                <a href="#" data-aos="fade-up" data-aos-duration="2000">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Indicators -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right side: Small Banners (4 columns) -->
+                        <div class="col-xl-4">
+                            <div class="row g-3">
+
+                                <!-- First Small Banner -->
+                                <div class="col-12">
+                                    <div class="land-card land-img-con2">
+                                        <img src="imgs/imgi_16_hero-Banner-2.png" class="d-block w-100" alt="...">
+                                        <div class="land-card-info">
+                                            <h4 data-aos="fade-down" data-aos-duration="1000">Mobile <br> Nexus Mobile
+                                                Pro 256GB</h4>
+                                            <p data-aos="fade-down" data-aos-duration="1000"> Limited Time: Online Only!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Small Banner -->
+                                <div class="col-12">
+                                    <div class="land-card land-img-con2">
+                                        <img src="imgs/imgi_17_hero-Banner-3.png" class="d-block w-100" alt="...">
+                                        <div class="land-card-info">
+                                            <h4 data-aos="fade-down" data-aos-duration="1000">Mobile <br> Nexus Mobile
+                                                Pro 256GB</h4>
+                                            <p data-aos="fade-down" data-aos-duration="1000">Limited Time: Online Only!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Right side -->
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- END Landing Section -->
+
+        <!-- Start Slider Section -->
+        <section id="slider" class="py-4">
+            <div class="container my-5">
+                <div class="owl-carousel categories-carousel text-center">
+                    <!-- Item 1 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_7_cat06.png">
+                        </div>
+                        <h6 class="mt-2">MacBook/PCs</h6>
+                        <small>3+ items</small>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_8_cat08.png" alt="Ipad Mini">
+                        </div>
+                        <h6 class="mt-2">Ipad Mini</h6>
+                        <small>+ items</small>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_9_cat01.png" Laptop">
+                        </div>
+                        <h6 class="mt-2">Laptop</h6>
+                        <small>+ items</small>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_19_cat02.png" Laptop">
+                        </div>
+                        <h6 class="mt-2">Laptop</h6>
+                        <small>+ items</small>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_20_cat03.png" Laptop">
+                        </div>
+                        <h6 class="mt-2">Laptop</h6>
+                        <small>+ items</small>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="category-item">
+                        <div class="icon-circle">
+                            <img src="imgs/imgi_21_cat04.png" Laptop">
+                        </div>
+                        <h6 class="mt-2">Laptop</h6>
+                        <small>+ items</small>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- END Slider Section -->
+
+        <!-- Feature Products Section -->
+        <section id="featureProducts" class="py-4">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Left Side: Special Offer Card -->
+                    <div class="heroImg col-12 col-md-6 col-lg-5 col-xl-3 d-flex ">
+                        <div class="imgBackground d-flex align-items-center">
+                            <div class="herocontent">
+                                <h3>Special Offer</h3>
+                                <div class="heroImgContainer py-5">
+                                    <img src="imgs/imgi_28_gamejoystick.png" alt="" class="w-100">
+                                </div>
+                                <p>Aero Control Pro Joysticks <br> $120.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Left Side -->
+
+                    <!-- Right Side: Feature Products with Tabs -->
+                    <div class="container-fluid col-12 col-md-6 col-lg-7 col-xl-9 ">
+
+                        <!-- Section Header (Title + Tabs) -->
+                        <div
+                            class="featureProductsHead bg-white d-xl-flex align-items-center justify-content-between p-2 px-3 mt-4 mt-md-0">
+
+                            <!-- Section Title -->
+                            <div class="titel ">
+                                <h2 class="fs-3">Feature Products</h2>
+                            </div>
+
+                            <!-- Tabs for Small Screens (toggle button + dropdown) -->
+                            <div class="tabs ForSmall d-xl-none position-relative">
+                                <button id="toggleButton">Show Filter</button>
+                                <div class="list">
+                                    <ul id="myList" class="hidden nav nav-tabs w-75 position-absolute bg-white mt-3"
+                                        id="myTab" role="tablist">
+                                        <!-- Tab: All Products -->
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active p-2 me-2" id="allProduct-tab"
+                                                data-bs-toggle="tab" data-bs-target="#allProduct-tab-pane" type="button"
+                                                role="tab" aria-controls="allProduct-tab-pane" aria-selected="true">
+                                                <i class="fa-solid fa-circle "></i> All Product
+                                            </button>
+                                        </li>
+                                        <!-- Tab: Laptop -->
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link me-2 p-2" id="Laptop-tab" data-bs-toggle="tab"
+                                                data-bs-target="#Laptop-tab-pane" type="button" role="tab"
+                                                aria-controls="Laptop-tab-pane" aria-selected="false">
+                                                <i class="fa-solid fa-circle "></i> Laptop
+                                            </button>
+                                        </li>
+                                        <!-- Tab: Keyboard -->
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link me-2 p-2" id="Keyboard-tab" data-bs-toggle="tab"
+                                                data-bs-target="#Keyboard-tab-pane" type="button" role="tab"
+                                                aria-controls="Keyboard-tab-pane" aria-selected="false">
+                                                <i class="fa-solid fa-circle "></i> Keyboard
+                                            </button>
+                                        </li>
+                                        <!-- Tab: Mouse -->
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link me-2 p-2" id="Mouse-tab" data-bs-toggle="tab"
+                                                data-bs-target="#Mouse-tab-pane" type="button" role="tab"
+                                                aria-controls="Mouse-tab-pane" aria-selected="false">
+                                                <i class="fa-solid fa-circle "></i> Mouse
+                                            </button>
+                                        </li>
+                                        <!-- Tab: Headphone -->
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link me-2 p-2" id="Headphone-tab" data-bs-toggle="tab"
+                                                data-bs-target="#Headphone-tab-pane" type="button" role="tab"
+                                                aria-controls="Headphone-tab-pane" aria-selected="false">
+                                                <i class="fa-solid fa-circle "></i> Headphone
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Tabs for Large Screens -->
+                            <div class="tabs d-none d-xl-flex">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <!-- Same Tabs repeated for large screens -->
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active p-2 me-2" id="allProduct-tab"
+                                            data-bs-toggle="tab" data-bs-target="#allProduct-tab-pane" type="button"
+                                            role="tab" aria-controls="allProduct-tab-pane" aria-selected="true">
+                                            <i class="fa-solid fa-circle "></i> All Product
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link me-2 p-2" id="Laptop-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Laptop-tab-pane" type="button" role="tab"
+                                            aria-controls="Laptop-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-circle "></i> Laptop
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link me-2 p-2" id="Keyboard-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Keyboard-tab-pane" type="button" role="tab"
+                                            aria-controls="Keyboard-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-circle "></i> Keyboard
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link me-2 p-2" id="Mouse-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Mouse-tab-pane" type="button" role="tab"
+                                            aria-controls="Mouse-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-circle "></i> Mouse
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link me-2 p-2" id="Headphone-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Headphone-tab-pane" type="button" role="tab"
+                                            aria-controls="Headphone-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-circle "></i> Headphone
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Section Header -->
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content " id="myTabContent">
+
+                            <!-- All Products Tab Content -->
+                            <div class="tab-pane fade show active" id="allProduct-tab-pane" role="tabpanel"
+                                aria-labelledby="allProduct-tab" tabindex="0">
+
+                                <!-- Product Cards -->
+                                <div
+                                    class="RecProductsCards cardContainer mt-4 row d-flex align-items-center justify-content-center justify-content-md-start ">
+
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_77_cat04.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_77_cat04.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_77_cat04.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+
+                                </div>
+                            </div>
+
+                            <!-- Laptop Tab Content -->
+                            <div class="tab-pane fade" id="Laptop-tab-pane" role="tabpanel" aria-labelledby="Laptop-tab"
+                                tabindex="0">
+                                <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_84_pro05.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_74_cat01.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                </div>
+                            </div>
+
+                            <!-- Keyboard Tab Content -->
+                            <div class="tab-pane fade" id="Keyboard-tab-pane" role="tabpanel"
+                                aria-labelledby="Keyboard-tab" tabindex="0">
+                                <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_86_pro07.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_26_cat09.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                </div>
+                            </div>
+
+                            <!-- Mouse Tab Content -->
+                            <div class="tab-pane fade" id="Mouse-tab-pane" role="tabpanel" aria-labelledby="Mouse-tab"
+                                tabindex="0">
+                                <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_89_pro08.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_35_cat10.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                </div>
+                            </div>
+
+                            <!-- Headphone Tab Content -->
+                            <div class="tab-pane fade" id="Headphone-tab-pane" role="tabpanel"
+                                aria-labelledby="Headphone-tab" tabindex="0">
+                                <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+                                    <!-- Single Product Card -->
+                                    <div class="inner col-md-12 col-lg-6 col-xl-4 mb-3 position-relative  "
+                                        data-aos="fade-up" data-aos-duration="1000">
+
+                                        <!-- Sale Badge -->
+                                        <div class="sale position-absolute">
+                                            <span>15%</span>
+                                        </div>
+
+                                        <!-- Product Control Icons (wishlist, view, compare) -->
+                                        <div class="proControl position-absolute">
+                                            <!-- For icons Control -->
+                                            <div class="controlsIcon">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="controlsIcon">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Product Card -->
+                                        <div class="cardd p-3">
+                                            <div class="cardImg position-relative">
+                                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                                <img src="imgs/imgi_78_cat05.png"
+                                                    class="w-100 position-absolute top-0 start-0 " alt="">
+                                            </div>
+                                            <div class="cardContent mt-4">
+                                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                                <p class="my-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    consectetur eveniet quod, libero rem fuga facilis?
+                                                </p>
+
+                                                <!-- Product Rating -->
+                                                <div class="rev">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                                    <span class="ms-2">(1 review)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <div class="price my-2">
+                                                    <span>1000$</span>
+                                                    <span class="ms-2">899$</span>
+                                                </div>
+
+                                                <!-- Add to Cart Button -->
+                                                <div class="addToCard">
+                                                    <button>Add To Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Single Product Card -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Tabs Content -->
+
+                    </div>
+                    <!-- End Right Side -->
+
+                </div>
+            </div>
+        </section>
+        <!-- END Feature Products Section -->
+
+        <!-- Popular Products Section -->
+        <section id="popularProducts" class="py-4">
+            <div class="container">
+
+                <!-- Section Header with Title and Tabs -->
+                <div
+                    class="featureProductsHead bg-white d-lg-flex align-items-center justify-content-between p-2 px-3 ">
+
+                    <!-- Section Title -->
+                    <div class="titel ">
+                        <h2 class="fs-3">Popular Products</h2>
+                    </div>
+
+                    <!-- Tabs for Small Screens (Mobile/Tablet) -->
+                    <div class="tabs ForSmall d-lg-none position-relative">
+                        <button id="toggleButton">Show Filter</button>
+                        <div class="list">
+                            <!-- Small screen navigation tabs -->
+                            <ul id="popularTabSmall" class="hidden nav nav-tabs w-50 position-absolute bg-white mt-3"
+                                role="tablist">
+
+                                <!-- All Products Tab (Active by default) -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active p-2 me-2 " id="popularAll-tab" data-bs-toggle="tab"
+                                        data-bs-target="#popularAll-tab-pane" type="button" role="tab"
+                                        aria-controls="#popularAll-tab-pane" aria-selected="true">
+                                        <i class="fa-solid fa-circle "></i> All Product
+                                    </button>
+                                </li>
+
+                                <!-- Laptop Tab -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-2 me-2" id="popularLaptop-tab" data-bs-toggle="tab"
+                                        data-bs-target="#popularLaptop-tab-pane" type="button" role="tab"
+                                        aria-controls="popularLaptop-tab-pane" aria-selected="false">
+                                        <i class="fa-solid fa-circle"></i> Laptop
+                                    </button>
+                                </li>
+
+                                <!-- Keyboard Tab -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-2 me-2" id="popularKeyboard-tab" data-bs-toggle="tab"
+                                        data-bs-target="#popularKeyboard-tab-pane" type="button" role="tab"
+                                        aria-controls="popularKeyboard-tab-pane" aria-selected="false">
+                                        <i class="fa-solid fa-circle"></i> Keyboard
+                                    </button>
+                                </li>
+
+                                <!-- Mouse Tab -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-2 me-2" id="popularMouse-tab" data-bs-toggle="tab"
+                                        data-bs-target="#popularMouse-tab-pane" type="button" role="tab"
+                                        aria-controls="popularMouse-tab-pane" aria-selected="false">
+                                        <i class="fa-solid fa-circle"></i> Mouse
+                                    </button>
+                                </li>
+
+                                <!-- Headphone Tab -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-2 me-2" id="popularHeadphone-tab" data-bs-toggle="tab"
+                                        data-bs-target="#popularHeadphone-tab-pane" type="button" role="tab"
+                                        aria-controls="popularHeadphone-tab-pane" aria-selected="false">
+                                        <i class="fa-solid fa-circle"></i> Headphone
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tabs for Large Screens (Desktop) -->
+                    <div class="tabs d-none d-lg-block">
+                        <ul class="nav nav-tabs" id="popularTab" role="tablist">
+
+                            <!-- All Products Tab (Active by default) -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active p-2 me-2" id="popularAll-tab-desk" data-bs-toggle="tab"
+                                    data-bs-target="#popularAll-tab-pane" type="button" role="tab"
+                                    aria-controls="popularAll-tab-pane" aria-selected="true">
+                                    <i class="fa-solid fa-circle"></i> All Product
+                                </button>
+                            </li>
+
+                            <!-- Laptop Tab -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 me-2" id="popularLaptop-tab-desk" data-bs-toggle="tab"
+                                    data-bs-target="#popularLaptop-tab-pane" type="button" role="tab"
+                                    aria-controls="popularLaptop-tab-pane" aria-selected="false">
+                                    <i class="fa-solid fa-circle"></i> Laptop
+                                </button>
+                            </li>
+
+                            <!-- Keyboard Tab -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 me-2" id="popularKeyboard-tab-desk" data-bs-toggle="tab"
+                                    data-bs-target="#popularKeyboard-tab-pane" type="button" role="tab"
+                                    aria-controls="popularKeyboard-tab-pane" aria-selected="false">
+                                    <i class="fa-solid fa-circle"></i> Keyboard
+                                </button>
+                            </li>
+
+                            <!-- Mouse Tab -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 me-2" id="popularMouse-tab-desk" data-bs-toggle="tab"
+                                    data-bs-target="#popularMouse-tab-pane" type="button" role="tab"
+                                    aria-controls="popularMouse-tab-pane" aria-selected="false">
+                                    <i class="fa-solid fa-circle"></i> Mouse
+                                </button>
+                            </li>
+
+                            <!-- Headphone Tab -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 me-2" id="popularHeadphone-tab-desk" data-bs-toggle="tab"
+                                    data-bs-target="#popularHeadphone-tab-pane" type="button" role="tab"
+                                    aria-controls="popularHeadphone-tab-pane" aria-selected="false">
+                                    <i class="fa-solid fa-circle"></i> Headphone
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content " id="popularTabContent">
+
+                    <!-- All Products Content -->
+                    <div class="tab-pane fade show active" id="popularAll-tab-pane" role="tabpanel"
+                        aria-labelledby="allProduct-tab" tabindex="0">
+                        <div
+                            class="RecProductsCards cardContainer mt-4 row d-flex align-items-center justify-content-center justify-content-md-start">
+
+                            <!-- Single Product Card -->
+                            <div class="inner col-12 col-md-6 col-lg-3 p-2 mb-md-2 position-relative" data-aos="fade-up"
+                                data-aos-duration="1000">
+
+                                <!-- Discount Badge -->
+                                <div class="sale position-absolute">
+                                    <span>15%</span>
+                                </div>
+
+                                <!-- Product Control Icons (wishlist, view, compare) -->
+                                <div class="proControl position-absolute"><!-- For icons Control -->
+                                    <div class="controlsIcon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="controlsIcon">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="controlsIcon">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Product Card Content -->
+                                <div class="cardd p-3">
+                                    <div class="cardImg position-relative">
+                                        <!-- Main product image -->
+                                        <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                        <!-- Hover/secondary image -->
+                                        <img src="imgs/imgi_77_cat04.png" class="w-100 position-absolute top-0 start-0 "
+                                            alt="">
+                                    </div>
+                                    <div class="cardContent mt-4">
+                                        <!-- Product Name -->
+                                        <a href="#" class="fs-4">Silent Touch Pro</a>
+
+                                        <!-- Product Description -->
+                                        <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+                                        <!-- Review Stars -->
+                                        <div class="rev">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                            <span class="ms-2">(1 review)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <div class="price my-2">
+                                            <span>1000$</span>
+                                            <span class="ms-2">899$</span>
+                                        </div>
+
+                                        <!-- Add to Cart Button -->
+                                        <div class="addToCard">
+                                            <button>Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Product Card -->
+
+                        </div>
+                    </div>
+
+                    <!-- Laptop Products Content -->
+                    <div class="tab-pane fade" id="popularLaptop-tab-pane" role="tabpanel" aria-labelledby="Laptop-tab"
+                        tabindex="0">
+                        <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+                            <!-- Product cards go here -->
+                        </div>
+                    </div>
+
+                    <!-- Keyboard Products Content -->
+                    <div class="tab-pane fade" id="popularKeyboard-tab-pane" role="tabpanel"
+                        aria-labelledby="Keyboard-tab" tabindex="0">
+                        <div
+                            class="RecProductsCards cardContainer mt-4 row d-flex align-items-center justify-content-center justify-content-md-start">
+
+                            <!-- Example Product Card -->
+                            <div class="inner col-12 col-md-6 col-lg-3 p-2 mb-md-2 position-relative">
+                                <div class="sale position-absolute">
+                                    <span>15%</span>
+                                </div>
+                                <div class="proControl position-absolute"><!-- For icons Control -->
+                                    <div class="controlsIcon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="controlsIcon">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="controlsIcon">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </div>
+                                </div>
+                                <div class="cardd p-3">
+                                    <div class="cardImg position-relative">
+                                        <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                        <img src="imgs/imgi_77_cat04.png" class="w-100 position-absolute top-0 start-0 "
+                                            alt="">
+                                    </div>
+                                    <div class="cardContent mt-4">
+                                        <a href="#" class="fs-4">Silent Touch Pro</a>
+                                        <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                        <div class="rev">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                            <span class="ms-2">(1 review)</span>
+                                        </div>
+                                        <div class="price my-2">
+                                            <span>1000$</span>
+                                            <span class="ms-2">899$</span>
+                                        </div>
+                                        <div class="addToCard">
+                                            <button>Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Example Product Card -->
+
+                        </div>
+                    </div>
+
+                    <!-- Mouse Products Content -->
+                    <div class="tab-pane fade" id="popularMouse-tab-pane" role="tabpanel" aria-labelledby="Mouse-tab"
+                        tabindex="0">
+                        <div class="RecProductsCards cardContainer mt-4 row d-flex align-items-center ">
+                            <!-- Product cards go here -->
+                        </div>
+                    </div>
+
+                    <!-- Headphone Products Content -->
+                    <div class="tab-pane fade" id="popularHeadphone-tab-pane" role="tabpanel"
+                        aria-labelledby="Headphone-tab" tabindex="0">
+                        <div class="RecProductsCards cardContainer mt-4 row d-flex align-items-center ">
+                            <!-- Product cards go here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Popular Products Section -->
+
+
+        <!-- Banner Section -->
+        <section id="banner" class="py-4">
+            <div class="banner">
+                <div class="container">
+                    <!-- Row that contains the banner content -->
+                    <div class="row  py-4 align-items-center justify-content-between">
+
+                        <!-- Left side: Banner title/text -->
+                        <div class="titel text-center text-lg-start col-12 col-md-5 col-lg-5 " data-aos="fade-right"
+                            data-aos-duration="1000">
+                            <h3>
+                                Big Savings Await! <br>
+                                <span>Shop Now</span> for Unbeatable Deals!
+                            </h3>
+                        </div>
+
+                        <!-- Middle image (responsive center image) -->
+                        <div class="midImg col-12 my-4 my-md-0 d-flex justify-content-center col-md-3 col-lg-3"
+                            data-aos="fade-down" data-aos-duration="1000">
+                            <img src="imgs/imgi_41_sale-banner-1.png" alt="">
+                        </div>
+
+                        <!-- Right side image -->
+                        <div class="rightImg col-12 d-flex justify-content-center col-md-3 col-lg-4" data-aos="fade-up"
+                            data-aos-duration="1000">
+                            <img src="imgs/imgi_42_sale-banner-2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Banner Section -->
+
+        <!-- Recommended Products Section -->
+        <section id="RecommendedProducts" class="py-4">
+            <div class="container">
+
+                <!-- Section Header (Title + Show More link) -->
+                <div class="RecProductsHead bg-white d-sm-flex ">
+                    <!-- Section title -->
+                    <div class="titel ">
+                        <h2 class="fs-3">Recommended Products</h2>
+                    </div>
+                    <!-- Show more button/link -->
+                    <div class="showMore" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="#" class=" fs-5 ">Show More<i class="fa-solid fa-arrow-right ps-2 px-3"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product Cards Container -->
+                <div class="RecProductsCards cardContainer mt-4 row d-fl align-items-center ">
+
+                    <!-- Single Product Card -->
+                    <div class="inner   col-12 col-md-6 col-lg-3   p-2 mb-md-2 position-relative" data-aos="fade-up"
+                        data-aos-duration="1000">
+
+                        <!-- Sale badge -->
+                        <div class="sale position-absolute">
+                            <span>15%</span>
+                        </div>
+
+                        <!-- Control Icons (wishlist, view, compare) -->
+                        <div class="proControl position-absolute"><!-- For icons Control -->
+                            <div class="controlsIcon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="controlsIcon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="controlsIcon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="cardd p-3">
+
+                            <!-- Product Images (main + hover/overlay) -->
+                            <div class="cardImg position-relative">
+                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                <img src="imgs/imgi_77_cat04.png" class="w-100 position-absolute top-0 start-0 " alt="">
+                            </div>
+
+                            <!-- Product details -->
+                            <div class="cardContent mt-4">
+                                <!-- Product title -->
+                                <a href="#" class="fs-4">Silent Touch Pro</a>
+
+                                <!-- Product description -->
+                                <p class="my-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dusantiptatum, consectetur eveniet quod, libero rem fuga facilis?
+                                </p>
+
+                                <!-- Reviews and rating -->
+                                <div class="rev">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                    <span class="ms-2">(1 review)</span>
+                                </div>
+
+                                <!-- Product price (old + new) -->
+                                <div class="price my-2">
+                                    <span>1000$</span>
+                                    <span class="ms-2">899$</span>
+                                </div>
+
+                                <!-- Add to cart button -->
+                                <div class="addToCard">
+                                    <button>Add To Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate product card (same structure as above) -->
+                    <div class="inner col-12 col-md-6 col-lg-3 p-2 mb-md-2 position-relative" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="sale position-absolute">
+                            <span>15%</span>
+                        </div>
+                        <div class="proControl position-absolute"><!-- For icons Control -->
+                            <div class="controlsIcon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="controlsIcon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="controlsIcon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                        </div>
+                        <div class="cardd p-3">
+                            <div class="cardImg position-relative">
+                                <img src="imgs/imgi_38_pro03.png" class="w-100" alt="">
+                                <img src="imgs/imgi_77_cat04.png" class="w-100 position-absolute top-0 start-0 " alt="">
+                            </div>
+                            <div class="cardContent mt-4">
+                                <a href="#" class="fs-4">Silent Touch Pro</a>
+                                <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    dusantiptatum, consectetur eveniet quod, libero rem fuga facilis?</p>
+                                <div class="rev">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ccc;"></i>
+                                    <span class="ms-2">(1 review)</span>
+                                </div>
+                                <div class="price my-2">
+                                    <span>1000$</span>
+                                    <span class="ms-2">899$</span>
+                                </div>
+                                <div class="addToCard">
+                                    <button>Add To Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of duplicate product card -->
+
+                </div>
+            </div>
+        </section>
+        <!--END Recommended Products Section -->
+
+
+        <!-- Partners Section -->
+        <section id="partners" class="py-4">
+            <div class="partnersContainer bg-white py-4">
+                <div class="container">
+                    <div class="owl-carousel partners-carousel d-flex align-items-start">
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="imgs/imgi_118_Brand02.png" alt=""  mx-auto d-block">
+                        </div>
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="1200">
+                            <img src="imgs/imgi_44_Brand03.png" alt=""  mx-auto d-block">
+                        </div>
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="1400">
+                            <img src="imgs/imgi_45_Brand04.png" alt=""  mx-auto d-block">
+                        </div>
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="1600">
+                            <img src="imgs/imgi_46_Brand05.png" alt=""  mx-auto d-block">
+                        </div>
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="1800">
+                            <img src="imgs/imgi_43_Brand02.png" alt=""  mx-auto d-block">
+                        </div>
+
+                        <!-- Single Partner Logo -->
+                        <div class="partner p-4" data-aos="zoom-in" data-aos-duration="2000">
+                            <img src="imgs/imgi_47_Brand01.png" alt=""  mx-auto d-block">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END Partners Section -->
+
+        <!-- Latest Blogs Section -->
+        <section id="latestBlogs" class="py-4">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="RecProductsHead bg-white d-sm-flex p-2 px-3">
+                    <!-- Title -->
+                    <div class="titel ">
+                        <h2 class="fs-3">latest Blogs</h2>
+                    </div>
+                    <!-- Show More Link -->
+                    <div class="showMore" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="#" class=" fs-5 ">Show More
+                            <i class="fa-solid fa-arrow-right ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- End of Section Header -->
+
+                <!-- Blog Cards Container -->
+                <div class="cardContainer mt-3">
+                    <div class="row ">
+
+                        <!-- Single Blog Card -->
+                        <div class="inner col-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="blogCard">
+                                <div class=" card">
+
+                                    <!-- Blog Image -->
+                                    <div class="card_img">
+                                        <a href="">
+                                            <img src="imgs/imgi_130_blog09.png" class="card-img-top" alt="...">
+                                        </a>
+                                    </div>
+
+                                    <!-- Blog Content -->
+                                    <div class="card-body">
+                                        <!-- Blog Date -->
+                                        <div class="date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>DEC 11, 2024</span>
+                                        </div>
+                                        <!-- Blog Title -->
+                                        <a href="#">How to Choose the Best Headphones for Your Needs</a>
+                                        <!-- Blog Short Description -->
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card’s content.</p>
+                                        <!-- Read More Button -->
+                                        <a href="#" class="btn ">Read More
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Single Blog Card -->
+
+                        <!-- Single Blog Card (Duplicated Example) -->
+                        <div class="inner col-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="blogCard">
+                                <div class="card">
+                                    <div class="card_img">
+                                        <a href="">
+                                            <img src="imgs/imgi_130_blog09.png" class="card-img-top" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="date">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <span>DEC 11, 2024</span>
+                                        </div>
+                                        <a href="#">How to Choose the Best Headphones for Your Needs</a>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn ">Read More
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Single Blog Card -->
+
+                    </div>
+                </div>
+                <!-- End of Blog Cards Container -->
+
+            </div>
+        </section>
+        <!-- END Latest Blogs Section -->
+
+        <!-- Banner Section with Countdown Timer -->
+        <section id="banner" class="banner2 py-4">
+            <div class="banner">
+                <div class="container">
+                    <div class="row py-4 align-items-center justify-content-between">
+
+                        <!-- Left Side: Title and Button -->
+                        <div class="titel text-center text-lg-start col-12 col-md-5 col-lg-4" data-aos="fade-down"
+                            data-aos-duration="1000">
+                            <h3>
+                                <span>Hurry up!</span> Offer ends in
+                            </h3>
+                            <button>Shop Now</button>
+                        </div>
+
+                        <!-- Middle Section: Countdown Timer -->
+                        <div class="Countdown row text-center d-flex align-items-stretch col-12 my-3 my-md-0 col-md-4"
+                            data-aos="fade-down" data-aos-duration="1000">
+
+                            <!-- Days Counter -->
+                            <div class="col-6 col-lg-5 col-xl-3">
+                                <div class="time-box">
+                                    <span id="days">0</span>
+                                    <small>Days</small>
+                                </div>
+                            </div>
+
+                            <!-- Hours Counter -->
+                            <div class="col-6 col-lg-5 col-xl-3">
+                                <div class="time-box">
+                                    <span id="hours">0</span>
+                                    <small>Hrs</small>
+                                </div>
+                            </div>
+
+                            <!-- Minutes Counter -->
+                            <div class="col-6 col-lg-5 col-xl-3">
+                                <div class="time-box">
+                                    <span id="minutes">0</span>
+                                    <small>Mins</small>
+                                </div>
+                            </div>
+
+                            <!-- Seconds Counter -->
+                            <div class="col-6 col-lg-5 col-xl-3">
+                                <div class="time-box">
+                                    <span id="seconds">0</span>
+                                    <small>Secs</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Image -->
+                        <div class="rightImg col-12 d-flex justify-content-center col-md-3 col-lg-4"
+                            data-aos="fade-down" data-aos-duration="1000">
+                            <img src="imgs/imgi_60_countdown.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END Banner Section with Countdown Timer -->
+
+    </main>
+
+    <footer class="bg-white py-4">
+        <!-- Footer Top Section -->
+        <div class="container mt-5 border-bottom">
+            <div class="TpFooter row">
+
+                <!-- Footer Item: Easy Returns -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-right" data-aos-duration="1000">
+                    <!-- Icon -->
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/product-return.png" alt="">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="content text-center">
+                        <span class="d-block">Easy Returns</span>
+                        <span>From handpicked sellers</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Fast Delivery -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/delivery-bike.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Fast Delivery</span>
+                        <span>Delivery in 24 hours max!</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Safe Payment -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/credit-card.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Safe Payment</span>
+                        <span>100% secure payments</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Online Discount -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/discounts.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Online Discount</span>
+                        <span>Add multi-buy discount</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Need Help -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/question.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Need Help</span>
+                        <span>Dedicated 24/7 Support</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Curated Items -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="imgs/filter.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Curated Items</span>
+                        <span>From handpicked sellers</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END Footer Top Section -->
+
+
+        <!-- Bottom Footer Section -->
+
+        <div class="BtFooter  ">
+            <div class="container py-5 border-bottom">
+                <div class="footer row d-flex align-items-start justify-content-md-between ">
+
+                    <!-- Left Column: Logo, Description, Social Media -->
+                    <div class="left col-12 col-md-4 col-xl-3 order-xl-0" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <!-- Company Logo -->
+                        <div class="logo">
+                            <img class="w-100" src="imgs/imgi_181_logo_1024x1024.png" alt="">
+                        </div>
+
+                        <!-- Short Description -->
+                        <div class="para my-3 ms-3 ms-md-0 ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit quam facilis
+                                voluptas quibusdam?</p>
+                        </div>
+
+                        <!-- Social Media Icons -->
+                        <div class="media-icons d-flex align-items-center fs-2 justify-content-between w-75">
+                            <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
+                            <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Center Column: Navigation Links -->
+                    <div class="center-links col-12 my-4 my-xl-0 col-md-12 order-md-2 order-xl-0 col-xl-5"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div
+                            class="linksContainer row d-md-flex ms-3 ms-md-0 align-items-start justify-content-between">
+
+                            <!-- Link Section: Find It Fast -->
+                            <div class="link col-12 col-md-4">
+                                <button id="toggleBtn" class="toggleBtn">Find It Fast</button>
+                                <ul>
+                                    <li><a href="">Laptop & Computer</a></li>
+                                    <li><a href="">Camera & Photo</a></li>
+                                    <li><a href="">Smartphone & Tablet</a></li>
+                                    <li><a href="">TV & Audio</a></li>
+                                    <li><a href="">Home & Electronic</a></li>
+                                    <li><a href="">Headphone & Speakers</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Link Section: Quick Links -->
+                            <div class="link col-12 col-md-4 my-4 my-md-0">
+                                <button class="toggleBtn">Quick Link</button>
+                                <ul>
+                                    <li><a href="">Home Page</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Shop Now</a></li>
+                                    <li><a href="">Signup</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Link Section: Customer Care -->
+                            <div class="link col-12 col-md-4">
+                                <button class="toggleBtn">Customer Care</button>
+                                <ul>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">Track Your Order</a></li>
+                                    <li><a href="">Products</a></li>
+                                    <li><a href="">Customer Service</a></li>
+                                    <li><a href="">Returns/Exchange</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Info & Newsletter -->
+                    <div class="right col-12 col-md-7 order-md-1 d-flex align-items-end order-xl-0 col-xl-4"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="container">
+                            <!-- Address -->
+                            <div class="map">
+                                <a href=""><i class="fa-solid fa-location-dot"></i>26 South Street, New York, NY 98,
+                                    USA.</a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mail my-3">
+                                <a href=""><i class="fa-regular fa-envelope"></i>exampleinfo@gmail.com</a>
+                            </div>
+
+                            <!-- Newsletter Subscription -->
+
+                            <div class="Subscribe">
+
+                                <input type="text" placeholder="Enter Your Email ...">
+                                <button class="">Subscribe</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END Bottom Footer Section -->
+
+
+
+        <!-- Copy Section -->
+        <div class="Copy">
+            <div class="container">
+                <div class="row ">
+
+                    <!-- Left Side: Copyright Text -->
+                    <div class="col-12 col-md-8 text">
+                        <p>
+                            Copyright ©
+                            <a href="">Gadgetize - Accessories.</a>
+                            All Rights Reserved. Powered by
+                            <a href="">UIPARADOX.</a>
+                        </p>
+                    </div>
+
+                    <!-- Right Side: Social Media Icons -->
+                    <div
+                        class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end align-items-md-start">
+                        <div class="media-icons d-flex align-items-center justify-content-between w-50 mt-3 mt-md-0 ">
+                            <div class="icon"><i class="fa-brands fa-square-facebook fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-x-twitter fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-tiktok fs-3"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END Copy Section -->
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
