@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #006937;
+    --secCOlor: #dd3842;
+    --bCOlor: #000;
+    --whClolor: #fff;
+    --bRadus: 8px;
+    --para-color: #92949F;
+    --yColor: #fee502;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: var(--para-color);
+}
+
+ul {
+    list-style: non;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+main {
+    background: #eaeaec;
+    transition: all 0.4s;
+}
+
+
+/* header */
+header {
+
+    background-color: var(--whClolor);
+}
+
+
+#cart .cart {
+    background-image: url('https://computer-accesories-ui.myshopify.com/cdn/shop/files/breadcrum_1920x.png?v=1733999494');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart .heroTitel h2 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+
+
+@media (max-width: 991px) {
+    #cart-table thead {
+        display: none;
+        /* اخفاء العناوين */
+    }
+
+    #cart-table tr.cart-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 12px;
+    }
+
+    #cart-table td {
+        border: none !important;
+        padding: 8px 0 !important;
+        text-align: left !important;
+        width: 100%;
+    }
+
+    /* المنتج ياخد صف كامل فوق */
+    #cart-table td.product-info {
+        margin-bottom: 10px;
+    }
+
+    /* باقي الأعمدة في صف واحد */
+    #cart-table td.quantity,
+    #cart-table td.subtotal,
+    #cart-table td.remove {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #eee !important;
+        padding-top: 8px !important;
+    }
+
+    /* labels */
+    #cart-table td.quantity::before {
+        content: "Quantity";
+        font-weight: bold;
+    }
+
+    #cart-table td.subtotal::before {
+        content: "Subtotal";
+        font-weight: bold;
+    }
+
+    #cart-table td.remove::before {
+        content: "Remove";
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+aside .card {
+
+    border: 1px solid #ddd;
+    border-radius: var(--bRadus);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside .card-header-promo {
+    background-color: #d1e7dd;
+    color: var(--mainColor);
+    border-bottom: 1px solid #a3cfbb;
+    text-align: center;
+}
+
+aside .text-green {
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+
+
+.drop {
+    padding: 20px 0;
+
+}
+
+.drop .drop-list {
+    display: flex;
+    justify-content: center;
+}
+
+.drop .drop-list li {
+    position: relative;
+}
+
+.drop .drop-list li a {
+    color: #000;
+    font-weight: 600;
+}
+
+.drop .drop-list li .img-con {
+    position: absolute;
+    top: 0;
+    background: red;
+    width: 200px;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+
+}
+
+.drop .drop-list li:hover .img-con {
+    opacity: 1;
+    transform: translateX(22%);
+    -webkit-transform: translateX(22%);
+    -moz-transform: translateX(22%);
+    -ms-transform: translateX(22%);
+    -o-transform: translateX(22%);
+}

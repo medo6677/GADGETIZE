@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="css/cartStyle.css">
+</head>
+
+<body>
+    <!-- -----------------------------Start  header&nav-------------------------- -->
+
+    <header>
+        <div class="langAndCurrency py-3 d-none d-lg-block ">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="leftWelcome">
+                    <h4 class="text-white fs-5 fw-normal">Welcome to Worldwide Electronics Store</h4>
+                </div>
+                <div class="dropDown d-flex align-items-center justify-content-between">
+                    <div class="lang">
+                        <button> <img src="../../imgs/imgi_1_flag_en.png" alt="">English <i
+                                class="fa-solid fa-caret-up "></i></button>
+                        <ul>
+                            <li>
+                                <div class="img">
+                                    <img src="../../imgs/imgi_1_flag_en.png" alt="">
+
+                                </div>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../../imgs/imgi_2_flag_es.png" alt="">
+
+                                </div>
+                                <a href="#">Español</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../../imgs/imgi_3_flag_zh-CN.png" alt="">
+
+                                </div>
+                                <a href="#">简体中文</a>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../../imgs/imgi_4_flag_it.png" alt="">
+
+                                </div>
+                                <a href="#">Italiano</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="lang currency">
+                        <button>United States(PKR ₨) <i class="fa-solid fa-caret-up "></i></button>
+                        <ul>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Austria (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Belgium (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Germany (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Italy (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Netherlands (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Norway (PKR Rs) </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Pakistan (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Poland (PKR Rs)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item p-0 fs-6" href="#">Portugal (PKR Rs)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4 border-bottom">
+            <div class="header-content">
+                <div class="row align-items-center justify-content-end">
+                    <div class="col-3 d-xl-none">
+                        <div class="offcanv">
+                            <i class="fa-solid fa-bars" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+                        </div>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container">
+                                    <div class="search-input ">
+                                        <input type="text" placeholder="Search....">
+                                        <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                    <ul>
+                                        <li class="border-bottom"><a href=""> <i class="fa-regular fa-user"></i> Login /
+                                                Register</a></li>
+                                        <li class="border-bottom"><a href="">Shop <span>New</span></a></li>
+                                        <li class="border-bottom"><a href="">Home</a></li>
+                                        <li class="border-bottom"><a href="">Page</a></li>
+                                        <li class="border-bottom"><a href="">Blog</a></li>
+                                        <li class="border-bottom"><a href="">Wishlist <span>(1)</span></a></li>
+                                        <li class="border-bottom"><a href="">Compare <span>(0)</span></a></li>
+                                        <li class="border-bottom"><a href="">Contact Us</a></li>
+
+                                    </ul>
+                                    <div class="language border-bottom ">
+                                        <div class="row">
+                                            <div class="small-lang d-flex align-items-center justify-content-between">
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        English
+                                                    </a>
+
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        English
+                                                    </a>
+
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="small-coin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="logo">
+                            <a href="../../index.html">
+                                <img src="../../imgs/imgi_5_logo_140x@2x.png" alt="">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-5 d-none d-xl-flex">
+                        <div class="search-input">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    All categories
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Search....">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-4">
+                        <div class="controls">
+                            <a href="#" class="d-none d-xl-flex">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="i-controler">
+                                    <span>Login</span>
+                                    <span>
+                                        Acount
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="../wish/index.html" class="d-none d-xl-flex">
+                                <div class="icon-notify">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div class="notify">2</div>
+                                </div>
+                            </a>
+                            <a href="index.html">
+                                <div class="icon-notify">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div class="notify">2</div>
+                                </div>
+                                <div class="i-controler d-none d-md-block">
+                                    <span>Your Cart</span>
+                                    <span>
+                                        $9.000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <div class="nav-foot d-flex d-xl-none">
+        <div class="container">
+            <div class="nav-content">
+
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-regular fa-house"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-solid fa-shop"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <div class="icon-notify">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="notify">2</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="nav-icon-con">
+                    <a href="#">
+                        <div class="icon-notify">
+                            <i class="fa-solid fa-heart"></i>
+                            <div class="notify">2</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lastNav d-none d-xl-flex">
+        <div class="container">
+            <div class="row justify-content-between py-4">
+                <div class="browseAllCategories col-3">
+                    <button id="Categories"><i class="fa-solid fa-bars"></i>Browse All Categories</button>
+                    <div class="categorieContainer ">
+                        <ul>
+                            <li><a href="">Computer & Desktop</a> <i class="fa-solid fa-chevron-down"></i>
+
+                                <div class="subCategorie pt-4">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-4 ">
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="itemsImg col-8 row ">
+                                            <div class="item col-6">
+                                                <img src="../../imgs/imgi_93_pro03.png" alt="" class="w-100">
+                                            </div>
+                                            <div class="item col-6">
+                                                <img src="../../imgs/imgi_30_pro09.png" alt="" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li><a href="">Laptop & Ipad</a></li>
+                            <li><a href="">Cameras & Photos</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-12 ">
+                                            <ul class="w-100">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Smart Phones & Tablets</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie pt-4">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-5 ">
+                                            <ul>
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="itemsImg col-7 row ">
+                                            <div class="item ">
+                                                <img src="../../imgs/imgi_93_pro03.png" alt="" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Home & Kitchen</a><i class="fa-solid fa-chevron-down"></i>
+                                <div class="subCategorie">
+                                    <div class="row justify-content-between ">
+                                        <div class="listItems col-12 ">
+                                            <ul class="w-100">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">TV & Audios</a></li>
+                            <li><a href="">Health & Beauty</a></li>
+                            <li><a href="">Watches & Eyewear</a></li>
+                            <li><a href="">Top Deals</a></li>
+                            <li><a href="">Top Selling Products</a></li>
+                            <li><a href="">Top Featured Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="col-4 ">
+                    <ul class="d-flex align-items-center justify-content-between position-relative">
+                        <li><a href="../../index.html">Home</a>
+
+                        </li>
+                        <li><a href="">Product<i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="nav-drop ">
+                                <div class="row">
+
+                                    <div class="nav-drop-list col-6">
+                                        <div class="row">
+
+                                            <ul class="col-6">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                            <ul class="col-6">
+                                                <a href="" class="titel">Laptop & Computers</a>
+                                                <li><a href="">Elite Audio Gear</a></li>
+                                                <li><a href="">Hyper Glide Mouse</a></li>
+                                                <li><a href="">iPad Standard Plus</a></li>
+                                                <li><a href="">Pure Bass Headphones</a></li>
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-drop-img col-6">
+                                        <div class="row">
+
+                                            <div class="nav-img col-6">
+                                                <div class="inner">
+
+                                                    <img src="../../imgs/imgi_36_pro10.png" alt="" class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="nav-img col-6 ">
+                                                <div class="inner ">
+
+                                                    <img src="../../imgs/imgi_84_pro05.png" alt="" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="nav-drop ">
+                                <div class="row">
+
+                                    <div class="nav-drop-list ">
+                                        <div class="row">
+
+                                            <ul class="">
+                                                <li><a href="">Nexus Mobile Pro 256GB</a></li>
+                                                <li><a href="">Supreme Tech Phone</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">Pages<i class="fa-solid fa-chevron-down"></i> </a></li>
+                        <li><a href="">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="navSale col-3 d-flex justify-content-end">
+                    <a href="#"><i class="fa-solid fa-percent"></i>Sale $20 Off Your First Order.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------End  header&nav-------------------------- -->
+    <main>
+        <!-- Cart Section -->
+        <section id="cart">
+            <div class="cart">
+                <div class="container d-flex align-items-center justify-content-center">
+                    <!-- Page Title -->
+                    <div class="heroTitel">
+                        <h2>Your Cart</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartTabel py-5">
+                <div class="container">
+                    <div class="container my-5">
+                        <div class="row align-items-start">
+
+                            <!-- Cart Table (Left Side) -->
+                            <div class="card shadow-sm col-12 col-lg-8 mx-auto">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle" id="cart-table">
+                                            <thead class="table-light d-none d-lg-table-header-group">
+                                                <tr>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col" class="text-center">Quantity</th>
+                                                    <th scope="col" class="text-center">Subtotal</th>
+                                                    <th scope="col" class="text-center">Remove</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="cart-row">
+                                                    <!-- Product -->
+                                                    <td class="product-info">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../../imgs/imgi_8_cat08.png" alt="Product"
+                                                                class="img-fluid rounded me-3" style="max-width:80px;">
+                                                            <div>
+                                                                <h6 class="fw-bold mb-1">Elite Audio Gear</h6>
+                                                                <small class="text-muted">Color: Green</small><br>
+                                                                <span class="fw-bold text-success">Rs.1,200.00</span>
+                                                                <del class="text-muted ms-2">Rs.1,500.00</del>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+
+                                                    <!-- Quantity -->
+                                                    <td class="text-center quantity">
+                                                        <div class="input-group justify-content-end">
+                                                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                                                            <input type="text"
+                                                                class="form-control text-center form-control-sm"
+                                                                value="1" style="max-width:50px;">
+                                                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                                                        </div>
+                                                    </td>
+
+                                                    <!-- Subtotal -->
+                                                    <td class="text-center subtotal fw-bold">Rs.1,200.00</td>
+
+                                                    <!-- Remove -->
+                                                    <td class="text-center remove">
+                                                        <button class="btn btn-danger btn-sm">
+                                                            <i class="fa fa-trash"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Cart Actions -->
+                                    <div
+                                        class="pt-3 d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-md-between">
+                                        <button class="btn btn-success mb-2 mb-md-0">Continue Shopping</button>
+                                        <button class="btn btn-danger" id="clear-cart">Clear Cart</button>
+                                    </div>
+                                </div>
+                                <!-- Order Note -->
+                                <div class="container my-5">
+                                    <label for="orderNote" class="form-label fw-bold">Add Order Note</label>
+                                    <div class="card p-3 border">
+                                        <textarea class="form-control border-0 shadow-none" id="orderNote" rows="5"
+                                            placeholder="How can we help you?"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Cart Summary (Right Side) -->
+                            <aside class="col-12 col-lg-4 mt-5 mt-lg-0 p-0 px-lg-3">
+                                <div class="card">
+
+                                    <!-- Free Shipping Banner -->
+                                    <div
+                                        class="card-header card-header-promo d-flex justify-content-center align-items-center">
+                                        <span>Congratulations! You've got <span class="text-green">Free
+                                                Shipping!</span></span>
+                                    </div>
+
+                                    <!-- Cart Summary Details -->
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold">Cart totals</h5>
+
+                                        <!-- Subtotal -->
+                                        <div class="d-flex justify-content-between my-3">
+                                            <span>Subtotal</span>
+                                            <span>Rs.2,400.00</span>
+                                        </div>
+                                        <hr>
+
+                                        <!-- Shipping Calculator -->
+                                        <h6 class="fw-bold">Estimate shipping rates:</h6>
+                                        <div class="mb-3">
+                                            <label for="country" class="form-label">Country</label>
+                                            <select class="form-select" id="country">
+                                                <option selected>United States</option>
+                                                <option selected>United States</option>
+                                                <option selected>United States</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="state" class="form-label">State</label>
+                                            <select class="form-select" id="state">
+                                                <option selected>Alabama</option>
+                                                <option selected>Alabama</option>
+                                                <option selected>Alabama</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="zip" class="form-label">Zip/Postal Code</label>
+                                            <input type="text" class="form-control" id="zip"
+                                                placeholder="Zip/Postal Code">
+                                        </div>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-success" type="button">Calculate Shipping
+                                                Rates</button>
+                                        </div>
+                                        <hr>
+
+                                        <!-- Coupon -->
+                                        <h6 class="fw-bold">Coupon</h6>
+                                        <p class="text-muted">Coupon code will work on checkout page.</p>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Coupon code">
+                                        </div>
+
+                                        <!-- Savings -->
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>You save in total</span>
+                                            <span>Rs.600.00</span>
+                                        </div>
+
+                                        <!-- Order Total -->
+                                        <div
+                                            class="d-flex justify-content-between align-items-center fw-bold fs-5 mb-4">
+                                            <span>Order Totals</span>
+                                            <span class="text-green">Rs.2,400.00</span>
+                                        </div>
+
+                                        <!-- Terms & Conditions -->
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I agree with <a href="#" class="text-decoration-none">Terms &
+                                                    Conditions</a>
+                                            </label>
+                                        </div>
+
+                                        <!-- Checkout Button -->
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Check Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-white py-4">
+        <!-- Footer Top Section -->
+        <div class="container mt-5 border-bottom">
+            <div class="TpFooter row">
+
+                <!-- Footer Item: Easy Returns -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <!-- Icon -->
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/product-return.png" alt="">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="content text-center">
+                        <span class="d-block">Easy Returns</span>
+                        <span>From handpicked sellers</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Fast Delivery -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/delivery-bike.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Fast Delivery</span>
+                        <span>Delivery in 24 hours max!</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Safe Payment -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/credit-card.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Safe Payment</span>
+                        <span>100% secure payments</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Online Discount -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/discounts.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Online Discount</span>
+                        <span>Add multi-buy discount</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Need Help -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/question.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Need Help</span>
+                        <span>Dedicated 24/7 Support</span>
+                    </div>
+                </div>
+
+                <!-- Footer Item: Curated Items -->
+                <div class="footerItem col-12 col-md-4 col-lg-2 mb-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img src="../../imgs/filter.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <span class="d-block">Curated Items</span>
+                        <span>From handpicked sellers</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END Footer Top Section -->
+
+
+        <!-- Bottom Footer Section -->
+
+        <div class="BtFooter  ">
+            <div class="container py-5 border-bottom">
+                <div class="footer row d-flex align-items-start justify-content-md-between ">
+
+                    <!-- Left Column: Logo, Description, Social Media -->
+                    <div class="left col-12 col-md-4 col-xl-3 order-xl-0">
+                        <!-- Company Logo -->
+                        <div class="logo">
+                            <img class="w-100" src="../../imgs/imgi_181_logo_1024x1024.png" alt="">
+                        </div>
+
+                        <!-- Short Description -->
+                        <div class="para my-3 ms-3 ms-md-0 ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit quam facilis
+                                voluptas quibusdam?</p>
+                        </div>
+
+                        <!-- Social Media Icons -->
+                        <div class="media-icons d-flex align-items-center fs-2 justify-content-between w-75">
+                            <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
+                            <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Center Column: Navigation Links -->
+                    <div class="center-links col-12 my-4 my-xl-0 col-md-12 order-md-2 order-xl-0 col-xl-5">
+                        <div
+                            class="linksContainer row d-md-flex ms-3 ms-md-0 align-items-start justify-content-between">
+
+                            <!-- Link Section: Find It Fast -->
+                            <div class="link col-12 col-md-4">
+                                <button id="toggleBtn" class="toggleBtn">Find It Fast</button>
+                                <ul>
+                                    <li><a href="">Laptop & Computer</a></li>
+                                    <li><a href="">Camera & Photo</a></li>
+                                    <li><a href="">Smartphone & Tablet</a></li>
+                                    <li><a href="">TV & Audio</a></li>
+                                    <li><a href="">Home & Electronic</a></li>
+                                    <li><a href="">Headphone & Speakers</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Link Section: Quick Links -->
+                            <div class="link col-12 col-md-4 my-4 my-md-0">
+                                <button class="toggleBtn">Quick Link</button>
+                                <ul>
+                                    <li><a href="../../index.html">Home Page</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Shop Now</a></li>
+                                    <li><a href="">Signup</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Link Section: Customer Care -->
+                            <div class="link col-12 col-md-4">
+                                <button class="toggleBtn">Customer Care</button>
+                                <ul>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">Track Your Order</a></li>
+                                    <li><a href="">Products</a></li>
+                                    <li><a href="">Customer Service</a></li>
+                                    <li><a href="">Returns/Exchange</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Info & Newsletter -->
+                    <div class="right col-12 col-md-7 order-md-1 d-flex align-items-end order-xl-0 col-xl-4">
+                        <div class="container-fluid">
+                            <!-- Address -->
+                            <div class="map">
+                                <a href=""><i class="fa-solid fa-location-dot"></i>26 South Street, New York, NY 98,
+                                    USA.</a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mail my-3">
+                                <a href=""><i class="fa-regular fa-envelope"></i>exampleinfo@gmail.com</a>
+                            </div>
+
+                            <!-- Newsletter Subscription -->
+                            <div class="Subscribe">
+
+                                <input type="text" placeholder="Enter Your Email ...">
+                                <button class="">Subscribe</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END Bottom Footer Section -->
+
+
+
+        <!-- Copy Section -->
+        <div class="Copy">
+            <div class="container">
+                <div class="row ">
+
+                    <!-- Left Side: Copyright Text -->
+                    <div class="col-12 col-md-8 text">
+                        <p>
+                            Copyright ©
+                            <a href="">Gadgetize - Accessories.</a>
+                            All Rights Reserved. Powered by
+                            <a href="">UIPARADOX.</a>
+                        </p>
+                    </div>
+
+                    <!-- Right Side: Social Media Icons -->
+                    <div
+                        class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end align-items-md-start">
+                        <div class="media-icons d-flex align-items-center justify-content-between w-50 mt-3 mt-md-0 ">
+                            <div class="icon"><i class="fa-brands fa-square-facebook fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-x-twitter fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram fs-3"></i></div>
+                            <div class="icon"><i class="fa-brands fa-tiktok fs-3"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END Copy Section -->
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/cart.js"></script> -->
+</body>
+
+</html>

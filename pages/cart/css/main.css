@@ -1,0 +1,1296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #006937;
+    --secCOlor: #dd3842;
+    --bCOlor: #000;
+    --whClolor: #fff;
+    --bRadus: 8px;
+    --para-color: #92949F;
+    --yColor: #fee502;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: var(--para-color);
+}
+
+ul {
+    list-style: non;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+main {
+    background: #eaeaec;
+    transition: all 0.4s;
+}
+
+/* --------------end Genrel------------ */
+
+/* --------------header style------------ */
+.langAndCurrency {
+    background-color: var(--mainColor);
+}
+
+.langAndCurrency .dropDown .lang {
+    position: relative;
+}
+
+.langAndCurrency .dropDown .lang button {
+    background-color: transparent;
+    border: none;
+    color: var(--whClolor);
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.langAndCurrency .dropDown .lang button img {
+    max-width: 30%;
+    margin-right: 8px;
+}
+
+.langAndCurrency .dropDown .lang button i,
+.currency button i {
+    transform: rotate(-90deg);
+    transition: all 0.4s;
+    color: var(--whClolor);
+}
+
+.langAndCurrency .dropDown .lang button .active {
+    transform: rotate(-180deg);
+}
+
+.langAndCurrency .dropDown .lang ul {
+    background-color: var(--whClolor);
+    padding: 15px 16px 5px 16px;
+    border-radius: var(--bRadus);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.langAndCurrency .dropDown .lang ul.active {
+    opacity: 1;
+    top: 50px;
+    z-index: 111;
+}
+
+.langAndCurrency .dropDown .lang ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    transition: all 0.4s;
+}
+
+.langAndCurrency .dropDown .lang ul li a {
+    color: var(--bCOlor);
+    font-size: 14px;
+}
+
+.langAndCurrency .dropDown .lang ul li:hover {
+    transform: translateX(5px);
+}
+
+.langAndCurrency .dropDown .lang ul li:hover a {
+    text-decoration: underline;
+    color: var(--mainColor);
+}
+
+.langAndCurrency .dropDown .lang ul li .img img {
+    max-width: 70%;
+}
+
+/* ------------------------------------------- */
+
+
+
+.header-content {}
+
+.offcanv i {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.header-content .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content .logo img {
+    width: 150px;
+}
+
+.header-content .search-input {
+    display: flex;
+    outline: 1px solid var(--mainColor);
+    border-radius: var(--bRadus);
+    -webkit-border-radius: var(--bRadus);
+    -moz-border-radius: var(--bRadus);
+    -ms-border-radius: var(--bRadus);
+    -o-border-radius: var(--bRadus);
+}
+
+.header-content .search-input .dropdown {
+    margin-right: 10px;
+}
+
+.header-content .search-input .dropdown .btn {
+    border: 0;
+}
+
+.offcanvas-body ul {
+    margin-top: 25px;
+}
+
+.offcanvas-body ul li {
+    padding: 12px 0;
+
+}
+
+.offcanvas-body ul li a {
+    font-size: 16px;
+    color: var(--bCOlor);
+    font-weight: 500;
+}
+
+.offcanvas-body ul li a:hover {
+
+    color: var(--mainColor);
+
+}
+
+.offcanvas-body .language {
+    padding-bottom: 16px;
+}
+
+.offcanvas-body .language .small-lang a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: var(--bCOlor);
+}
+
+.offcanvas-body .language .small-lang ul {
+    padding: 10px;
+    border: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.offcanvas-body .language .small-lang ul li a {
+    font-size: 14px;
+}
+
+.header-content .search-input input {
+    flex-grow: 1;
+    border: 0;
+    outline: none;
+    padding: 4px;
+}
+
+.header-content .search-input>button {
+    display: block;
+    background-color: var(--mainColor);
+    color: var(--whClolor);
+    border: 0;
+    padding: 8px 16px;
+    border-top-right-radius: var(--bRadus);
+    border-bottom-right-radius: var(--bRadus);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.header-content .search-input>button:hover {
+    background-color: var(--bCOlor);
+}
+
+.header-content .controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-content .controls a {
+    display: flex;
+    align-items: center;
+    color: var(--bCOlor);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    font-weight: 600;
+}
+
+.header-content .controls a:hover {
+    color: var(--mainColor);
+}
+
+.header-content .controls a i {
+    font-size: 35px;
+    color: var(--bCOlor);
+    margin-right: 10px;
+}
+
+.header-content .controls a .i-controler {}
+
+.header-content .controls a .i-controler span:first-child {
+    color: var(--para-color);
+    font-size: 14px;
+    display: block;
+}
+
+.header-content .controls a .i-controler span:last-child {}
+
+.header-content .controls .icon-notify {
+    position: relative;
+}
+
+.header-content .controls a .icon-notify i {}
+
+.header-content .controls .icon-notify .notify {
+    position: absolute;
+    background: var(--secCOlor);
+    color: var(--whClolor);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    top: -8px;
+    right: 5px;
+
+}
+
+@media screen and (max-width:767px) {
+    .header-content .controls a .icon-notify i {
+        font-size: 26px;
+    }
+}
+
+/* end header */
+/* nav-foot */
+.nav-foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: var(--mainColor);
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-foot .nav-icon-con a {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-foot .nav-icon-con a .icon-notify {
+    position: relative;
+}
+
+
+.nav-foot .nav-icon-con a .icon-notify .notify {
+    position: absolute;
+    background: var(--secCOlor);
+    color: var(--whClolor);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    top: 0px;
+    right: -5px;
+}
+
+
+/* nav-foot */
+
+/* -----------------------lastNav----------------------- */
+
+.lastNav .browseAllCategories button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.lastNav .browseAllCategories button i {
+    margin-right: 5px;
+}
+
+.lastNav .browseAllCategories {
+    position: relative;
+}
+
+.lastNav .browseAllCategories .categorieContainer {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 4;
+    padding: 10px 0;
+    border-bottom-right-radius: var(--bRadus);
+    border-bottom-left-radius: var(--bRadus);
+    background-color: var(--whClolor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    visibility: hidden;
+}
+
+.lastNav .browseAllCategories .categorieContainer.show {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 25px;
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+    transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
+
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li:hover>i {
+    color: var(--mainColor);
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li:hover>a {
+    color: var(--mainColor);
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li a {
+    color: var(--bCOlor);
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li i {
+    transform: rotate(-90deg);
+    font-size: 12px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie {
+    position: absolute;
+    top: -10px;
+    left: 140%;
+    z-index: 4;
+    padding: 10px 20px 10px 10px;
+    border-bottom-right-radius: var(--bRadus);
+    border-bottom-left-radius: var(--bRadus);
+    background-color: var(--whClolor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: max-content;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+/* .lastNav .subCategorie .listItems>ul:last-child {
+    margin-top: 20px;
+} */
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie ul a.titel {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bCOlor);
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie ul li {
+    padding: 5px 8px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie ul li:hover {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    text-decoration: underline;
+
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie ul li a {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li:hover .subCategorie {
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie .itemsImg .item img {
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.lastNav .browseAllCategories .categorieContainer ul li .subCategorie .itemsImg .item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* ---------------------- */
+.lastNav nav ul {
+    margin: 0;
+}
+
+.lastNav nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bCOlor);
+    transition: color 0.04s;
+    -webkit-transition: color 0.04s;
+    -moz-transition: color 0.04s;
+    -ms-transition: color 0.04s;
+    -o-transition: color 0.04s;
+}
+
+.lastNav nav ul li a i {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.lastNav nav ul li a:hover {
+
+    color: var(--mainColor);
+
+}
+
+.lastNav nav ul li:hover .nav-drop {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.lastNav nav ul li .nav-drop {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatex(-50%);
+    z-index: 5;
+    background-color: var(--whClolor);
+    padding: 16px;
+    width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: var(--bRadus);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    -webkit-border-radius: var(--bRadus);
+    -moz-border-radius: var(--bRadus);
+    -ms-border-radius: var(--bRadus);
+    -o-border-radius: var(--bRadus);
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-list ul li {
+    padding: 8px 0;
+    transition: all 0.4s;
+    color: var(--para-color);
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-list ul li:hover {
+    transform: translateX(10px);
+    text-decoration: underline;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-list ul>a.titel {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mainColor);
+    padding-bottom: 8px;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-list ul li a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-list ul :nth-child(2) {
+    margin-top: 12px;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-img .inner {
+    border-radius: var(--bRadus);
+    padding: 10px;
+    background-color: #eaeaec;
+    overflow: hidden;
+    transition: all 0.4s;
+    -webkit-border-radius: var(--bRadus);
+    -moz-border-radius: var(--bRadus);
+    -ms-border-radius: var(--bRadus);
+    -o-border-radius: var(--bRadus);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-img .inner img {
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.lastNav nav ul li .nav-drop .nav-drop-img .inner:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.lastNav .navSale a {
+    color: var(--bCOlor);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.lastNav .navSale a i {
+    color: var(--secCOlor);
+    margin-right: 5px;
+}
+
+/* -----------------------END lastNav----------------------- */
+/* ------------------------LandingHero--------------------------- */
+
+#Landing .carousel-indicators {
+    bottom: -10px;
+}
+
+#Landing .land-card {
+    position: relative;
+}
+
+#Landing .land-img-con img {
+    transition: all 0.4s;
+}
+
+#Landing .land-img-con img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--bRadus);
+    opacity: 0;
+}
+
+#Landing .land-img-con2 {
+    overflow: hidden;
+    border-radius: var(--bRadus);
+}
+
+#Landing .land-img-con2 img {
+    transition: transform 0.4s;
+}
+
+#Landing .land-img-con2:hover img {
+    transform: scale(1.1);
+}
+
+#Landing .land-card-info {
+    padding: 20px;
+    color: var(--whClolor);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+#Landing .land-card-info span:not(h1 span) {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+}
+
+#Landing .land-card-info span:not(span:nth-of-type(2)) {
+    color: yellow;
+}
+
+
+
+#Landing .land-card-info a {
+    display: block;
+    background: var(--whClolor);
+    color: var(--bCOlor);
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: var(--bRadus);
+    margin-top: 10px;
+    transition: all 0.4s;
+}
+
+#Landing .land-card-info a:hover {
+    background: var(--bCOlor);
+    color: var(--whClolor);
+}
+
+/* End Landing */
+@media screen and (max-width: 767px) {
+    #Landing .land-img-con {
+        height: 500px;
+    }
+
+    #Landing .land-img-con img:first-child {
+        opacity: 0;
+    }
+
+    #Landing .land-img-con img:nth-of-type(2) {
+        opacity: 1;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* ------------------------END LandingHero--------------------------- */
+
+/* ------------------------ Start img&tabs style--------------------------- */
+
+#featureProducts .container .heroImg .imgBackground {
+    background-image: url('../imgs/imgi_178_Banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: var(--bRadus);
+
+}
+
+#featureProducts .container .heroImg .herocontent {
+    padding: 16px;
+
+
+}
+
+#featureProducts .container .heroImg .herocontent h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--whClolor);
+    margin: 16px 0;
+}
+
+#featureProducts .container .heroImg .herocontent .heroImgContainer img {
+    transition: all 0.4s;
+}
+
+#featureProducts .container .heroImg .herocontent .heroImgContainer:hover img {
+    transform: scale(0.8);
+}
+
+#featureProducts .container .heroImg .herocontent p {
+    color: var(--whClolor);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ------------------------ End img style--------------------------- */
+/* ------------------------ Start tabs style--------------------------- */
+.featureProductsHead {
+    border-radius: var(--bRadus);
+
+}
+
+.featureProductsHead .ForSmall #toggleButton {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.featureProductsHead .ForSmall ul {
+    z-index: 55;
+    border-radius: var(--bRadus);
+}
+
+/* .featureProductsHead .ForSmall:hover #toggleButton button{
+    color: var(--mainColor);} */
+
+.hidden {
+    display: none;
+
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+    /* إزالة الخط الأفقي */
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active {
+    border: none !important;
+    /* إزالة الحدود حول الأزرار */
+    box-shadow: none !important;
+    /* إزالة الظل */
+}
+
+.tabs i {
+    font-size: 7px;
+}
+
+.tabs .nav-link {
+    padding: 0;
+}
+
+.tabs ul li button {
+    display: flex;
+    align-items: center;
+    /* color: var(--bCOlor); */
+}
+
+.tabs ul li button i {
+    padding-right: 15px;
+}
+
+.tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--mainColor);
+}
+
+.tabs .nav-link {
+    color: var(--bCOlor);
+}
+
+/* ------------------------------------------------------------------------- */
+.inner {
+    border-radius: var(--bRadus);
+
+}
+
+.cardd {
+    border-radius: var(--bRadus);
+    background: var(--whClolor);
+
+}
+
+.cardd .cardImg {
+    transition: all 1s;
+}
+
+.cardd .cardImg :last-child {
+    opacity: 0;
+    transition: all 0.4s;
+
+}
+
+.cardd .cardImg:hover :first-child {
+    opacity: 0;
+}
+
+.cardd .cardImg:hover :last-child {
+    opacity: 1;
+    transition: all 0.4s;
+
+}
+
+.cardd .cardContent a {
+    color: var(--mainColor);
+}
+
+.cardd .cardContent p {
+    font-size: 14px;
+    color: var(--para-color);
+}
+
+.cardd .cardContent .rev i,
+span {
+    font-size: 16px;
+    font-family: 400;
+}
+
+.cardd .cardContent .rev i {
+    color: var(--secCOlor);
+}
+
+.cardd .cardContent .addToCard button {
+    width: 100%;
+    background-color: var(--mainColor);
+    color: var(--whClolor);
+    border-radius: var(--bRadus);
+    padding: 8px 0;
+    border: unset;
+    transition: all 0.4s;
+}
+
+.cardd:hover .cardContent .addToCard button {
+    background-color: var(--whClolor);
+    color: var(--mainColor);
+    outline: 1px solid var(--mainColor);
+}
+
+/* -------------- For Discount------------ */
+
+.inner .sale span {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: var(--secCOlor);
+    color: var(--whClolor);
+    border-radius: 5px;
+    top: 30px;
+    left: 20px;
+    z-index: 3;
+}
+
+/* -------------- For For icons Control------------ */
+.inner .proControl {
+    position: absolute;
+    top: 22px;
+    right: 022px;
+    background: rgba(0, 105, 55, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(0, 105, 55, 0.21);
+    padding: 5px;
+    transform: translateX(10px);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.inner .proControl .controlsIcon {
+    margin-bottom: 8px;
+    border-radius: var(--bRadus);
+    padding: 10px;
+}
+
+.inner .proControl .controlsIcon i {
+    color: var(--whClolor);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.inner:hover .proControl {
+    z-index: 3;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.inner .proControl .controlsIcon i:hover {
+    color: var(--mainColor);
+}
+
+
+/* ------------------------ End tabs style--------------------------- */
+/* ------------------------ start banner style--------------------------- */
+
+#banner .banner {
+    background-image: url('../imgs/imgi_180_sale-banner_1920x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner .banner .titel h3 {
+    color: var(--whClolor);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+#banner .banner .titel h3 span {
+    color: var(--yColor);
+    font-size: 32px;
+}
+
+#banner .banner img {
+    transition: all 0.4s;
+    max-width: 100%;
+}
+
+#banner .banner img:hover {
+    transform: scale(0.8);
+}
+
+/* ------------------------ End banner style--------------------------- */
+/* ------------------------ Start Recommended Products style--------------------------- */
+.RecProductsHead {
+    padding: 16px;
+    border-radius: var(--bRadus);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.RecProductsHead .showMore a {
+    font-weight: 500;
+    color: var(--bCOlor);
+}
+
+.RecProductsHead .showMore:hover a {
+    color: var(--mainColor);
+}
+
+/* ------------------------ End Recommended Products style--------------------------- */
+/* ------------------------ Start Bloog style--------------------------- */
+#latestBlogs .cardContainer .inner {
+
+    border-radius: 16px;
+
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card_img {
+    overflow: hidden;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card_img img {
+    min-width: 100%;
+    transition: all 0.4s;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card img:hover {
+    transform: scale(1.1);
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body .date {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body .date i {
+    color: var(--mainColor);
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body .date span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body a {
+    color: var(--bCOlor);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body a:hover {
+    color: var(--mainColor);
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body p {
+    margin: 16px 0;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body a.btn {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+#latestBlogs .cardContainer .inner .blogCard .card .card-body .btn:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------ End Bloog style--------------------------- */
+/* ------------------------ Start Banner2 with Countdown style--------------------------- */
+.banner2 .banner .titel button {
+    background-color: var(--bCOlor);
+    color: var(--whClolor);
+    padding: 16px 32px;
+    margin-top: 16px;
+    border-radius: var(--bRadus);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner2 .banner .titel button:hover {
+    background-color: var(--whClolor);
+    color: var(--bCOlor);
+}
+
+.banner .Countdown .time-box span {
+    background-color: var(--whClolor);
+    padding: 22px;
+    border-radius: var(--bRadus);
+    margin: 8px 0;
+}
+
+.banner .Countdown .time-box span,
+small {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner .Countdown .time-box small {
+    color: var(--whClolor);
+}
+
+/* ------------------------ End Banner2 with Countdown--------------------------- */
+/* ------------------------ Start footer style--------------------------- */
+
+.TpFooter .footerItem .content :first-child {
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    margin-top: 12px;
+}
+
+.TpFooter .footerItem:hover .icon {
+    animation: upDown 0.7s ease-in-out 1;
+
+}
+
+.TpFooter .footerItem .content :last-child {
+    color: var(--para-color);
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hr {
+    height: 0.1px;
+    min-width: 100%;
+    background-color: var(--para-color);
+}
+
+p {
+    color: var(--para-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.media-icons .icon i {
+    color: var(--mainColor);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.media-icons .icon i:hover {
+    transform: translateY(-10px);
+}
+
+.center-links .linksContainer .link button {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.center-links .linksContainer .link ul {
+    margin: 16px 0;    
+}
+
+.center-links .linksContainer .link ul.show {
+
+}
+.center-links .linksContainer .link ul li {
+    margin: 8px 0;
+    transition: all 0.4s;
+}
+
+.center-links .linksContainer .link ul li a {
+    color: var(--para-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.center-links .linksContainer .link ul li:hover {
+    text-decoration: underline;
+    transform: translateX(20px);
+}
+
+.center-links .linksContainer .link ul li:hover a {
+    color: var(--mainColor);
+}
+
+/* القايمه مخفيه في الشاشات الصغيره */
+
+.right .map a,
+.right .mail a {
+    color: var(--para-color);
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.right a i,
+.right .mail a i {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.Subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Subscribe input {
+    border: none;
+    outline: 1px solid var(--mainColor);
+    transition: all 0.1s;
+    padding: 12px 8px;
+    border-radius: var(--bRadus);
+    width: 60%;
+}
+
+.Subscribe input:focus {
+    outline: 1px solid var(--secCOlor);
+}
+
+.Subscribe button {
+    font-size: 16px;
+    color: var(--whClolor);
+    background-color: var(--mainColor);
+    border-radius: var(--bRadus);
+    padding: 12px 12px;
+    transform: translateX(-15px);
+    border-left: 0;
+    border: var(--mainColor);
+
+}
+
+.Subscribe button:hover {
+    background-color: var(--bCOlor);
+    color: var(--whClolor);
+
+}
+
+footer .Copy {
+    margin-top: 30px;
+}
+
+footer .Copy .text {
+    font-size: 12px;
+}
+
+footer .Copy .text a {
+    color: var(--mainColor);
+}
+
+footer .Copy .text a:hover {
+    text-decoration: underline;
+}
+
+footer .Copy media-icons .icon i {
+    font-size: 40px;
+}
+
+/* @media screen and (max-width:1024px) {
+    .Subscribe input {
+        border: none;
+        padding: 10px 6px;
+        border-radius: var(--bRadus);
+        width: 50%;
+    }
+
+    .Subscribe input:focus {
+        outline: 1px solid var(--mainColor);
+    }
+
+    .Subscribe button {
+        font-size: 16px;
+        color: var(--whClolor);
+        background-color: var(--mainColor);
+        border-radius: var(--bRadus);
+        padding: 10px 10px;
+        transform: translateX(-15px);
+        border-left: 0;
+        border: var(--mainColor);
+
+    }
+
+} */
+
+
+/* ------------------------ End footer style--------------------------- */

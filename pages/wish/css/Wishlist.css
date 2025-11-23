@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #006937;
+    --secCOlor: #dd3842;
+    --bCOlor: #000;
+    --whClolor: #fff;
+    --bRadus: 8px;
+    --para-color: #92949F;
+    --yColor: #fee502;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: var(--para-color);
+}
+
+ul {
+    list-style: non;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+main {
+    background: #eaeaec;
+    transition: all 0.4s;
+}
+
+#Wishlist .Wishlist {
+    background-image: url('https://computer-accesories-ui.myshopify.com/cdn/shop/files/breadcrum_1920x.png?v=1733999494');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bCOlor);
+}
+
+#Wishlist .heroTitel h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
